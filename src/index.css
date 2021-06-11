@@ -1,4 +1,5 @@
 @tailwind base;
+
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,6 +10,7 @@ body {
   background: black;
   font-family: "Anonymous Pro", monospace !important;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 input:focus-within ~ label,

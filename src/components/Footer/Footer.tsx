@@ -3,35 +3,35 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
     return (
-        <footer className="max-w-sm sm:max-w-md lg:max-w-full mx-6 lg:mx-20 mt-20 lg:mt-80 lg:mb-9">
+        <footer className="max-w-sm md:max-w-xl md:mx-auto lg:max-w-full mx-6 lg:mx-20 mt-20 lg:mt-80 lg:mb-9">
             <div className="lg:flex">
                 <div className="flex lg:flex-1">
                     <div className="flex-1 justify-start lg:flex lg:items-end">
-                        <img src="./smallLogo.png" alt="xpad logo" width="100%" height="auto" style={{ maxWidth: '150px' }} />
+                        <img className={styles.footerLogo} src="./smallLogo.png" alt="xpad logo" width="100%" height="auto" />
                     </div>
                     <div className="flex-1 flex justify-center lg:justify-start text-xs lg:text-2xl text-gray-400">
                         <ul>
                             <li className="lg:mb-3">
-                                <a href="./">Home</a>
+                                <a href="/#home">Home</a>
                             </li>
                             <li className="lg:mb-3">
-                                <a href="./">About us</a>
+                                <a href="/#about">About us</a>
                             </li>
                             <li >
-                                <a href="./">Tokenomics</a>
+                                <a href="/#tokenomics">Tokenomics</a>
                             </li>
                         </ul>
                     </div>
                     <div className="flex-1 flex justify-end lg:justify-start text-xs lg:text-2xl text-gray-400">
                         <ul>
                             <li className="lg:mb-3">
-                                <a href="./">Tiers</a>
+                                <a href="/#tiers">Tiers</a>
                             </li>
                             <li className="lg:mb-3">
-                                <a href="./">Features</a>
+                                <a href="/#features">Features</a>
                             </li>
                             <li >
-                                <a href="./">Contact us</a>
+                                <a href="/#contact">Contact us</a>
                             </li>
                         </ul>
                     </div>

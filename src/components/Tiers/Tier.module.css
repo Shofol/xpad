@@ -43,7 +43,7 @@
   background: #aeaeae 0% 0% no-repeat padding-box;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .tier {
     min-width: 10.875rem;
     max-width: 13.875rem;

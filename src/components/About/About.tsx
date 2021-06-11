@@ -4,7 +4,7 @@ import styles from './About.module.css';
 const About = () => {
     return (
         <>
-            <div className="max-w-sm sm:max-w-md lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
+            <div id="about" className="max-w-sm md:max-w-xl md:mx-auto lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
                 <p className="text-gray-100 pl-10 lg:pl-24 mb-3 text-tiniest lg:text-lg">ABOUT US</p>
                 <div style={{ width: '110%' }}>
                     <h2 className={`w-full py-3 pl-10 lg:pl-24 lg:pr-32 lg:py-6 lg:leading-tight pr-4 bg-xpad-grad text-tiny font-bold uppercase lg:text-3xl ${styles.textBorder}`}>We’re a 5 person team of developers,marketers & designers  who’ve all come together to make XPAD a Reality.</h2>
@@ -27,7 +27,7 @@ const About = () => {
                 </div>
                 <div className="flex pl-10 lg:pl-24 mt-4 lg:mt-8">
                     <div className="flex flex-col">
-                        <p className={`${styles.gradText} lg:text-5xl`}>5 TEAM</p>
+                        <p className={`${styles.gradText} lg:text-5xl lg:mr-24`}>5 TEAM</p>
                         <p className="text-tiny lg:text-xl text-gray-400">Members</p>
                     </div>
                     <div className="flex flex-col pl-6">

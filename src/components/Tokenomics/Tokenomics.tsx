@@ -3,7 +3,7 @@ import styles from './Tokenomincs.module.css';
 
 const Tokenomics = () => {
     return (
-        <div className="max-w-sm sm:max-w-md lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
+        <div id="tokenomics" className="max-w-sm md:max-w-xl md:mx-auto lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
             <div className="flex flex-col lg:flex-row lg:items-start">
                 <div className="lg:flex-1">
                     <h2 className="text-base text-gray-100 pl-10 lg:pl-24 lg:text-5xl font-bold">TOKENOMICS</h2>

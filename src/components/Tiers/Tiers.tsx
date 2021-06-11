@@ -37,7 +37,7 @@ const tiers: TierModel[] = [
 
 const Tiers = () => {
     return (
-        <div className="max-w-sm sm:max-w-md lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
+        <div id="tiers" className="max-w-sm md:max-w-xl md:mx-auto lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
             <h2 className="text-base text-center text-gray-100 pl-10 mb-8 lg:text-5xl font-bold">TIERS</h2>
             <div className="pl-10 lg:flex lg:flex-wrap lg:max-w-screen-lg lg:justify-center lg:mx-auto">
                 {

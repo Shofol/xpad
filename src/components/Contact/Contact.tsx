@@ -73,7 +73,7 @@ const Contact = () => {
 
 
     return (
-        <div className="max-w-sm sm:max-w-md lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
+        <div id="contact" className="max-w-sm md:max-w-xl md:mx-auto lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
             <div className="ml-8 lg:ml-0">
                 <p className="text-gray-400 text-tiny lg:text-sm uppercase text-center">Developing a project ?</p>
                 <h2 className="text-gray-100 font-base uppercase font-bold text-center lg:text-5xl lg:mt-2">Let's talk</h2>

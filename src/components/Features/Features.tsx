@@ -35,7 +35,7 @@ const tiers: FeatureModel[] = [
 
 const Features = () => {
     return (
-        <div className="max-w-sm sm:max-w-md lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
+        <div id="features" className="max-w-sm md:max-w-xl md:mx-auto lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-80">
             <h2 className="text-base text-center text-gray-100 pl-10 mb-8 lg:mb-20 lg:text-5xl font-bold">FEATURES</h2>
             <div className="pl-10 lg:pl-0 lg:flex ">
                 {

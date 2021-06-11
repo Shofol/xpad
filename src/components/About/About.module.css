@@ -8,6 +8,12 @@
   }
 }
 
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .textBorder {
+    width: 110% !important;
+  }
+}
+
 .gradText {
   background-image: linear-gradient(
     180deg,

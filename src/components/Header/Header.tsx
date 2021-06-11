@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 const Header = () => {
 
     return (
-        <header className="max-w-sm sm:max-w-md lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-52">
+        <header id="home" className="max-w-sm md:max-w-xl md:mx-auto lg:max-w-full mx-6 lg:mx-28 mt-20 lg:mt-52">
             <p className="text-gray-100 pl-10 lg:pl-24 pr-2 mb-3 text-tiniest lg:text-lg">Welcome</p>
             <h1 className={`${styles.header} py-2 pl-10 lg:py-6 lg:leading-tight lg:pr-32 lg:pl-24 pr-4 bg-xpad-grad text-xs lg:text-3xl font-bold uppercase`}>Bridging the gap between investors and projects one variable at a time</h1>
             <div className="flex mt-5 lg:mt-14">
