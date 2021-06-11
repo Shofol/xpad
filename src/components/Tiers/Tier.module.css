@@ -56,4 +56,14 @@
     padding: 7px 34px;
     font-size: 16px;
   }
+
+  .bigCircle {
+    width: 15px;
+    height: 14px;
+  }
+
+  .smallCircle {
+    width: 10px;
+    height: 10px;
+  }
 }

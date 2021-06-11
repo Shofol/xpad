@@ -92,7 +92,7 @@ const Contact = () => {
                                 />
                                 <label className="absolute top-0 -z-1 duration-300 origin-0 text-gray-500 font-bold text-xs lg:text-xl" htmlFor="name">Your Name</label>
                             </div>
-                            {formik.errors.name ? <div className="text-red-600 text-xs lg:text-xl pt-1">{formik.errors.name}</div> : null}
+                            {formik.errors.name ? <div className="text-red-600 text-xs lg:text-sm pt-1">{formik.errors.name}</div> : null}
                         </div>
 
 
@@ -109,12 +109,12 @@ const Contact = () => {
                                 />
                                 <label className="absolute top-0 -z-1 duration-300 origin-0 text-gray-500 font-bold text-xs lg:text-xl" htmlFor="email">Your email</label>
                             </div>
-                            {formik.errors.email ? <div className="text-red-600 text-xs lg:text-xl pt-1">{formik.errors.email}</div> : null}
+                            {formik.errors.email ? <div className="text-red-600 text-xs lg:text-sm pt-1">{formik.errors.email}</div> : null}
                         </div>
                     </div>
 
                     <div className="lg:flex">
-                        <div className="my-6 lg:mt-6 lg:mb-0 lg:flex-1 lg:flex items-end">
+                        <div className="my-6 lg:mt-6 lg:mb-0 lg:flex-1 lg:flex lg:flex-col justify-end">
                             <div className="border-b border-gray-500 focus-within:border-gray-100 relative">
                                 <textarea
                                     className="block w-full appearance-none focus:outline-none bg-transparent text-gray-100 text-xs lg:text-xl"
@@ -127,7 +127,7 @@ const Contact = () => {
                                 />
                                 <label className="absolute top-0 -z-1 duration-300 origin-0 text-gray-500 font-bold text-xs lg:text-xl" htmlFor="message">About your project</label>
                             </div>
-                            {formik.errors.message ? <div className="text-red-600 text-xs lg:text-xl pt-1">{formik.errors.message}</div> : null}
+                            {formik.errors.message ? <div className="text-red-600 text-xs lg:text-sm pt-1">{formik.errors.message}</div> : null}
                         </div>
                         <div className="lg:flex-1 lg:flex items-end justify-center">
                             <button type="submit" className=" px-5 py-1 text-tiny font-bold self-start lg:self-end rounded-md lg:text-sm" style={{ background: 'transparent linear-gradient(350deg, #CCCCCC 0%, #D6D6D6 22%, #E7E7E7 50%, #CCCCCC 100%) 0% 0% no-repeat padding-box' }}>SUBMIT</button>
