@@ -6,10 +6,12 @@ import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
 import Tiers from '../components/Tiers/Tiers'
 import Tokenomics from '../components/Tokenomics/Tokenomics'
+import ParticlesBg from '../components/ParticlesBg/ParticlesBg';
 
 const Home = () => {
     return (
-        <div>
+        <>
+            <ParticlesBg />
             <Header />
             <About />
             <Tokenomics />
@@ -17,7 +19,8 @@ const Home = () => {
             <Features />
             <Contact />
             <Footer />
-        </div>
+
+        </>
     )
 }
 
