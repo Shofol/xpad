@@ -1,4 +1,3 @@
-import React from 'react'
 import About from '../components/About/About'
 import Contact from '../components/Contact/Contact'
 import Features from '../components/Features/Features'
@@ -18,8 +17,6 @@ const Home = () => {
             <Tiers />
             <Features />
             <Contact />
-            <Footer />
-
         </>
     )
 }
