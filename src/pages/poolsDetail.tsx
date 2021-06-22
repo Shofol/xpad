@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import PoolDetail from '../components/PoolDetail/PoolDetail';
+import PoolTransaction from '../components/PoolTransaction/PoolTransaction';
 import Tiers from '../components/Tiers/Tiers';
 
 
@@ -19,6 +20,7 @@ const PoolsDetail = () => {
             <Header header={header} description={description} logo={logo} />
             <PoolDetail />
             <Tiers />
+            <PoolTransaction />
         </div>
     )
 }
