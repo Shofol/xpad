@@ -17,7 +17,7 @@ const Pool = (props: any) => {
                 </div>
                 <div className="flex flex-col flex-2 pl-4">
                     <p className="text-tiniest lg:text-sm text-gray-400">{description}</p>
-                    <div className="flex mt-5">
+                    <div className="flex mt-5 z-10">
                         <a target="_blank" rel="noreferrer" href={discordLink} className={styles.icon}>
                             <img src="./discordBlack.svg" alt="discord link" width="18px" height="13px" />
                         </a>
@@ -39,13 +39,13 @@ const Pool = (props: any) => {
             </div>
             <div className="px-6 lg:px-16 mt-9 lg:mt-20 pb-9 lg:pb-16">
                 <ul >
-                    <li>
+                    <li className="mb-2">
                         <div className="w-full flex justify-between items-center">
                             <span className="text-gray-400 italic uppercase text-sm lg:text-base">{conversionname}</span>
                             <span className="text-gray-100 font-bold text-lg lg:text-xl">{conversionRate}</span>
                         </div>
                     </li>
-                    <li>
+                    <li className="mb-2">
                         <div className="w-full flex justify-between items-center">
                             <span className="text-gray-400 italic uppercase text-sm lg:text-base">CAP</span>
                             <span className="text-gray-100 font-bold text-lg lg:text-xl">{cap}</span>

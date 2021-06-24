@@ -13,8 +13,8 @@ const StakingTxn = () => {
     return (
         <div className="max-w-sm md:max-w-md lg:max-w-3xl mx-4 md:mx-auto mt-36 lg:mt-52">
             <div className="flex text-base lg:text-3xl text-gray-100 font-bold justify-center items-center mb-12">
-                <button onClick={() => { setSelectedTxnMethod('deposit') }} className={"focus:outline-none mx-5 hover:border-b-4 rounded-md " + (selectedTxnMethod === 'deposit' ? 'border-b-4' : '')}>Deposit</button>
-                <button onClick={() => { setSelectedTxnMethod('withdraw') }} className={"focus:outline-none mx-5 hover:border-b-4 rounded-md " + (selectedTxnMethod === 'withdraw' ? 'border-b-4' : '')}>Withdraw</button>
+                <button onClick={() => { setSelectedTxnMethod('deposit') }} className={"focus:outline-none mx-5 lg:hover:border-b-8 hover:border-b-4 pb-1 rounded-md " + (selectedTxnMethod === 'deposit' ? 'lg:border-b-8 border-b-4 pb-1' : '')}>Deposit</button>
+                <button onClick={() => { setSelectedTxnMethod('withdraw') }} className={"focus:outline-none mx-5 lg:hover:border-b-8 hover:border-b-4 pb-1 rounded-md " + (selectedTxnMethod === 'withdraw' ? 'lg:border-b-8 border-b-4 pb-1' : '')}>Withdraw</button>
             </div>
 
             <div className={`${styles.txnCard} px-5 py-10 lg:p-16`}>
