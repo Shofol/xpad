@@ -76,7 +76,7 @@ const PoolTransaction = () => {
             {(isBuyingModal || isClaimingModal) && <div className={`absolute flex justify-center items-center inset-0 w-full h-full ${styles.modal}`}>
                 <div className="bg-black rounded-xl flex justify-center items-start w-8/12 p-10 relative">
                     <button type="button" onClick={() => { handleClose() }}><img src="/close.svg" alt="close modal" width="11px" height="11px" className="absolute right-4 top-4" /></button>
-                    <p className="text-gray-100 text-center lg:text-lg">The <span>{isBuyingModal ? 'Buying' : 'Claiming'}</span> is on Progress</p>
+                    <p className="text-gray-100 text-center text-sm lg:text-lg">The <span>{isBuyingModal ? 'Buying' : 'Claiming'}</span> is on Progress</p>
                 </div>
             </div>}
         </div>
