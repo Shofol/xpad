@@ -31,3 +31,10 @@
   margin: 2rem auto;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .startSeparator,
+  .endSeparator {
+    height: 25px;
+  }
+}

@@ -8,8 +8,8 @@ const PoolTransaction = () => {
     const remContribution = '10 BUSD'
 
     return (
-        <div className="max-w-2xl mx-auto mt-20 lg:mt-80">
-            <div className={"px-24 py-16 " + `${styles.poolTxnContainer}`}>
+        <div className="mx-3 max-w-2xl lg:mx-auto mt-20 lg:mt-80">
+            <div className={`px-6 lg:px-24 py-16 ${styles.poolTxnContainer}`}>
                 <div>
                     <ul >
                         <li className="mb-2">
@@ -38,15 +38,17 @@ const PoolTransaction = () => {
                         </li>
                     </ul>
                     <form className="mt-10">
-                        <div className="flex w-full justify-between mb-5">
-                            <input className={`${styles.poolDetailInput} font-sm`} type="text" name="amount" id="amound" placeholder="Enter Amount in BUSD" />
-                            <button className="text-gray-100 border-2 mx-4 px-5 border-gray-400 rounded-lg">MAX</button>
-                            <button className={`${styles.poolDetailButton} px-8 font-bold`}>BUY</button>
+                        <div className="grid grid-rows-4 grid-cols-poolTxnSm grid-flow-col lg:grid-flow-row lg:grid-rows-2 lg:grid-cols-poolTxnLg">
+                            <input className={`${styles.poolDetailInput} font-sm mb-3`} type="text" name="amount" id="amound" placeholder="Enter Amount in BUSD" />
+                            <div className="lg:row-span-3 col-start-2 grid justify-center content-start" >
+                                <button className="text-gray-100 border-2 px-6 py-1.5 border-gray-400 rounded-lg ">MAX</button>
+                            </div>
+
+                            <button className={`${styles.poolDetailButton} px-8 font-bold mb-3`}>BUY</button>
+                            <input className={`${styles.poolDetailInput} font-sm mb-3`} type="text" name="amount" id="amound" placeholder="Claim Amount" />
+                            <button className={`${styles.poolDetailButton} px-6 font-bold mb-3`}>CLAIM</button>
                         </div>
-                        <div className="flex w-full justify-between">
-                            <input className={`${styles.poolDetailInput} font-sm`} type="text" name="amount" id="amound" placeholder="Claim Amount" />
-                            <button className={`${styles.poolDetailButton} px-6 font-bold`}>CLAIM</button>
-                        </div>
+
                     </form>
                 </div>
             </div>

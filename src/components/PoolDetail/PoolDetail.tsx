@@ -11,7 +11,7 @@ const PoolDetail = () => {
 
 
     return (
-        <div className="max-w-md mx-auto mt-20 lg:mt-80">
+        <div className="max-w-xs md:max-w-sm lg:max-w-md mx-auto mt-20 lg:mt-80 pl-4">
             <ul className="px-5">
                 <li>
                     <div className="w-full flex justify-between items-center">

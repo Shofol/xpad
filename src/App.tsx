@@ -9,6 +9,7 @@ import Navbar from './components/Navbar/Navbar';
 import Pools from './pages/pools';
 import Footer from './components/Footer/Footer';
 import PoolsDetail from './pages/poolsDetail';
+import Staking from './pages/staking';
 
 
 const App = () => {
@@ -24,6 +25,9 @@ const App = () => {
           </Route>
           <Route path="/pools">
             <Pools />
+          </Route>
+          <Route path="/staking">
+            <Staking />
           </Route>
         </Switch>
         <Footer />

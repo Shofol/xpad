@@ -19,12 +19,18 @@ module.exports = {
       },
       flex: {
         '2': '2 2 0%'
+      },
+      gridTemplateColumns: {
+        'poolTxnSm': '13rem 1fr',
+        'poolTxnLg': '2fr 1fr 1fr'
       }
-    }
+    },
+
   },
   variants: {
     extend: {
-      backgroundImage: ['hover', 'focus']
+      backgroundImage: ['hover', 'focus'],
+      borderWidth: ['hover', 'focus'],
     },
   },
   plugins: [],

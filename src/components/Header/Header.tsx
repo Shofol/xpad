@@ -18,7 +18,7 @@ const Header = (props: any) => {
                 </div>
             </div>
             <div className={"flex flex-col lg:flex-row " + (!isPoolsPath ? `mt-5 lg:mt-16` : `mt-2 lg:mt-8`)}>
-                <div className={`${styles.headerBottom} bg-xpad-grad h-12 lg:h-24 w-8/12 self-end lg:order-2 lg:flex-1`} ></div>
+                <div className={`${styles.headerBottom} bg-xpad-grad lg:h-24 w-8/12 self-end lg:order-2 lg:flex-1 ` + (!isPoolsPath ? 'h-12' : 'h-8')} ></div>
 
                 <div className="text-gray-100 uppercase text-tiny mt-5 lg:mt-0 flex justify-end lg:justify-start lg:pl-24 lg:self-start lg:order-1 lg:flex-1 lg:text-xl">
                     {!isPoolsPath && <>
