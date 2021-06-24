@@ -32,3 +32,12 @@
   border-radius: 12px;
   max-width: 283px;
 }
+
+.modal {
+  background: #212429 0% 0% no-repeat padding-box;
+  box-shadow: inset 0px 4px 6px #ffffff;
+  border-radius: 12px;
+  opacity: 0.9;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}

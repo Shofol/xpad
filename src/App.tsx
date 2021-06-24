@@ -8,7 +8,6 @@ import Home from './pages/home';
 import Navbar from './components/Navbar/Navbar';
 import Pools from './pages/pools';
 import Footer from './components/Footer/Footer';
-import PoolsDetail from './pages/poolsDetail';
 import Staking from './pages/staking';
 
 
