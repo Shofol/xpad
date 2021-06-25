@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from 'react'
 import { useRouteMatch } from 'react-router-dom';
 import styles from './Header.module.css';
 

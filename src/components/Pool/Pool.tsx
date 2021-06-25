@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { PoolModel } from '../../data/poolsData';
 import styles from './Pool.module.css';
 
@@ -13,23 +14,23 @@ const Pool = (props: any) => {
                     <div>
                         <img src={logo} alt={name} width="148px" height="148px" />
                     </div>
-                    <p className="text-gray-100 mt-3 lg:mt-0 text-xl lg:text-3xl">{name}</p>
+                    <Link to={`/pools/${name}`} className="text-gray-100 mt-3 lg:mt-0 text-xl lg:text-3xl">{name}</Link>
                 </div>
                 <div className="flex flex-col flex-2 pl-4">
                     <p className="text-tiniest lg:text-sm text-gray-400">{description}</p>
-                    <div className="flex mt-5 z-10">
-                        <a target="_blank" rel="noreferrer" href={discordLink} className={styles.icon}>
+                    <div className="flex mt-5">
+                        {(discordLink && discordLink !== '') && <a target="_blank" rel="noreferrer" href={discordLink} className={styles.icon}>
                             <img src="./discordBlack.svg" alt="discord link" width="18px" height="13px" />
-                        </a>
-                        <a target="_blank" rel="noreferrer" href={telegramLink} className={styles.icon}>
+                        </a>}
+                        {(telegramLink && telegramLink !== '') && <a target="_blank" rel="noreferrer" href={telegramLink} className={styles.icon}>
                             <img src="./telegramBlack.svg" alt="telegram link" width="16px" height="13px" />
-                        </a>
-                        <a target="_blank" rel="noreferrer" href={twitterLink} className={styles.icon}>
+                        </a>}
+                        {(twitterLink && twitterLink !== '') && <a target="_blank" rel="noreferrer" href={twitterLink} className={styles.icon}>
                             <img src="./twitterBlack.svg" alt="twitter link" width="17px" height="14px" />
-                        </a>
-                        <a target="_blank" rel="noreferrer" href={websiteLink} className={styles.icon}>
-                            <img src="./discordBlack.svg" alt="website link" width="18px" height="13px" />
-                        </a>
+                        </a>}
+                        {(websiteLink && websiteLink !== '') && <a target="_blank" rel="noreferrer" href={websiteLink} className={styles.icon}>
+                            <img src="./website.svg" alt="website link" width="18px" height="13px" />
+                        </a>}
                     </div>
                 </div>
             </div>

@@ -25,6 +25,13 @@
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
+  position: relative;
+  z-index: 100;
+  transition: box-shadow 0.25s;
+}
+
+.icon:hover {
+  box-shadow: 0px 0px 12px #cccccc;
 }
 
 @media screen and (max-width: 768px) {

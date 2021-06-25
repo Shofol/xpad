@@ -16,7 +16,7 @@ const Pools = () => {
                         <div className="flex flex-col lg:flex-row lg:mt-24 items-start justify-center">
                             {
                                 pools.map(
-                                    (pool: PoolModel, index) => <Link key={index} to={`${url}/${pool.name.toLowerCase()}`}> <Pool key={index} pool={pool} /></Link>
+                                    (pool: PoolModel, index) => <Pool key={index} pool={pool} />
                                 )
                             }
                         </div>
