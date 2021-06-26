@@ -33,7 +33,7 @@ const Header = (props: any) => {
 
 Header.defaultProps = {
     header: 'Bridging the gap between investors and projects one variable at a time',
-    description: 'mollis nisi euismod luctus pariatur. luctus risus duis fermentum. commodo ipsum consectetur bibendum laboris elit. aenean tempor consequat id donec aenean mollis do culpa consequat ligula feugiat',
+    description: 'XPAD is a new decentralised funding platform aiming to solve many of the core problems associated with previous iterations. Completely chain agnostic, bringing real projects to our investors and providing real value to projects launching through us, these are some of our core tenants we stick by and never compromise on. Welcome and delve into the code with us.',
     logo: "/logoLarge.png"
 }
 

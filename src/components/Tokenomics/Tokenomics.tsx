@@ -16,21 +16,21 @@ const Tokenomics = () => {
                         </li>
                         <li className={styles.tokenomincList}>
                             <div className={styles.circle}></div>
-                            <div>Treasary</div>
+                            <div>Treasury</div>
                             <hr className={styles.dots} />
-                            <div className="text-right">27.50K</div>
+                            <div className="text-right">2.75M</div>
                         </li>
                         <li className={styles.tokenomincList}>
                             <div className={styles.circle}></div>
-                            <div>Eco System</div>
+                            <div>Ecosystem</div>
                             <hr className={styles.dots} />
-                            <div className="text-right">17.50K</div>
+                            <div className="text-right">1.75M</div>
                         </li>
                         <li className={styles.tokenomincList}>
                             <div className={styles.circle}></div>
                             <div>Team Tokens</div>
                             <hr className={styles.dots} />
-                            <div className="text-right">25.00K</div>
+                            <div className="text-right">2.5M</div>
                         </li>
                         <li className={styles.tokenomincList}>
                             <div className={styles.circle}></div>

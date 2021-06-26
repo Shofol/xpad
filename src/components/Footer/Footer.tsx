@@ -39,19 +39,13 @@ const Footer = () => {
 
                 <div className="flex justify-between my-5 lg:my-0 lg:flex-col lg:justify-end lg:items-center">
                     <div className="flex lg:justify-center">
-                        <a href="./">
-                            <img src="./discord.svg" alt="discord link" width="100%" height="auto" className={`mr-3 lg:mr-4 ${styles.socialIcon}`} />
-                        </a>
-                        <a href="./">
+                        <a href="https://t.me/xpadfinance" target="_blank">
                             <img src="./telegram.svg" alt="telegram link" width="100%" height="auto" className={`mr-3 lg:mr-4 ${styles.socialIcon}`} />
                         </a>
-                        <a href="./">
+                        <a href="https://twitter.com/xpadfinance" target="_blank" >
                             <img src="./twitter.svg" alt="twitter link" width="100%" height="auto" className={`mr-3 lg:mr-4 ${styles.socialIcon}`} />
                         </a>
-                        <a href="./">
-                            <img src="./reddit.svg" alt="reddit link" width="100%" height="auto" className={`mr-3 lg:mr-4 ${styles.socialIcon}`} />
-                        </a>
-                        <a href="./">
+                        <a href="https://xpadfi.medium.com/" target="_blank">
                             <img src="./medium.svg" alt="medium link" width="100%" height="auto" className={`${styles.socialIcon}`} />
                         </a>
                     </div>
