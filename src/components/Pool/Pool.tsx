@@ -4,21 +4,24 @@ import styles from './Pool.module.css';
 
 const Pool = (props: any) => {
 
+
     const pool: PoolModel = props.pool;
     const { logo, name, description, status, startLimit, participants, conversionname, conversionRate, cap, access, progress, discordLink, telegramLink, twitterLink, websiteLink } = pool;
 
+
     return (
-        <div className={`${styles.pool} mx-auto mb-5 lg:m-5`}>
+        <div className={`${styles.pool} mx-auto mb-5 lg:m-5 relative`} >
+            <Link to={`/pools/${name}`} className="absolute inset-0 w-full h-full z-10" />
             <div className="flex px-5 py-10">
                 <div className="flex flex-col flex-1 items-center ">
                     <div>
                         <img src={logo} alt={name} width="148px" height="148px" />
                     </div>
-                    <Link to={`/pools/${name}`} className="text-gray-100 mt-3 lg:mt-0 text-xl lg:text-3xl">{name}</Link>
+                    <p className="text-gray-100 mt-3 lg:mt-0 text-xl lg:text-3xl">{name}</p>
                 </div>
                 <div className="flex flex-col flex-2 pl-4">
                     <p className="text-tiniest lg:text-sm text-gray-400">{description}</p>
-                    <div className="flex mt-5">
+                    <div className="flex mt-5 relative z-20">
                         {(discordLink && discordLink !== '') && <a target="_blank" rel="noreferrer" href={discordLink} className={styles.icon}>
                             <img src="./discordBlack.svg" alt="discord link" width="18px" height="13px" />
                         </a>}
