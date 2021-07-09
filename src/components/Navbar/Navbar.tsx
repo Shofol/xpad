@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Navbar.module.css'
 
 import {
     Link,
 } from "react-router-dom";
+import Connect from '../Connect';
 
 const Navbar = () => {
+
+    const [showConnectOptions, setShowConnectOptions] = useState(false);
+
     return (
         <nav className={`z-10 fixed left-0 right-0 top-0 w-full pb-10`}>
             <div className={`${styles.navBg}`} style={{ backgroundImage: `${process.env.PUBLIC_URL}/background.svg` }}></div>
@@ -14,7 +18,12 @@ const Navbar = () => {
                 <div className="text-gray-100 flex justify-between items-center self-end text-xs lg:text-2xl">
                     <Link to="/pools" className=" hover:bg-xpad-grad hover:text-black rounded-md px-3 lg:px-5 py-1">Pools</Link>
                     <Link to="/staking" className=" hover:bg-xpad-grad hover:text-black rounded-md px-3 lg:px-5 py-1">Staking</Link>
-                    <a href="/#contact" className=" hover:bg-xpad-grad hover:text-black rounded-md px-3 lg:px-5 py-1">Connect</a>
+                    <button onClick={() => setShowConnectOptions(!showConnectOptions)} className=" hover:bg-xpad-grad hover:text-black rounded-md px-3 lg:px-5 py-1">Connect</button>
+                </div>
+            </div>
+            <div className="relative ">
+                <div className={showConnectOptions ? 'w-48 lg:w-64 absolute top-4 right-8 lg:right-28 block border-gray-100 border-2 rounded-lg' : 'hidden'}>
+                    <Connect />
                 </div>
             </div>
         </nav>
